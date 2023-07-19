@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Shop Homepage</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'market/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="amazon.com">Amazon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about-page' %}">About</a></li>
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5" style="background-image: url('{% static 'market/imgs/side.jpg' %}')">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Shop in style</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">with Amazon. You think it...we got it.</p>
+                </div>
+            </div>
+        </header>
+        {% block content %}
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <a href="https://amzn.to/3DezJad"><img class="card-img-top" src="{% static 'market/imgs/laptop11.jpg' %}" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+
+                                    <a href="https://amzn.to/3DezJad"><h4 class="fw-bolder">ASUS VIvoBook</h4></a>
+                                    <!-- Product price-->
+                                </div>
+                                <p class="card-text" style="font-size:15px; ">ASUS VivoBook 15 F515 Thin and Light Laptop, 15.6” FHD Display, Intel Core i3-1005G1 Processor, Fingerprint Reader, Backlit Keyboard, Windows 10 Home, Slate Grey (20GB RAM | 1TB SSD)</p>
+
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <a class="btn btn-secondary" href="https://amzn.to/3DezJad">$399</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <a href="https://amzn.to/44qWh3o"><img class="card-img-top" src="{% static 'market/imgs/laptop22.jpg' %}" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <a href="https://amzn.to/44qWh3o"><h4 class="fw-bolder">Lenovo IdeaPad</h4></a>
+                                    <!-- Product price-->
+                                    
+                                </div>
+                                <p class="card-text" style="font-size:15px">Lenovo IdeaPad, 20GB RAM, 1TB SSD, AMD Dual-core Processor, 15.6 Inch HD Anti-Glare Display, Long Battery Life Up to 9.5Hr, HDMI, SD Card Reader, Windows 11, 1 Year Microsoft 365</p>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <a class="btn btn-secondary" href="https://amzn.to/44qWh3o">$399</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <a href="https://amzn.to/44HITI4"><img class="card-img-top" src="{% static 'market/imgs/laptop33.jpg' %}" alt="..." /></a>
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <a href="https://amzn.to/44HITI4"><h4 class="fw-bolder">SGIN 17</h4></a>
+                                    <!-- Product price-->
+                                    
+                                </div>
+                                <p class="card-text" style="font-size:15px">SGIN 17 Inch Laptop, Windows 11 Laptops with IPS Display, 4GB RAM 128GB SSD Computer, Intel Celeron Quad Core J4105(Up to 2.5 GHz), Mini HDMI, Webcam, Dual Wi-Fi, 512GB Expansion</p>
+
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <a class="btn btn-secondary" href="https://amzn.to/44HITI4">$399</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'market/imgs/laptop88.jpg' %}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <a href="https://amzn.to/46Q1uTZ"><h4 class="fw-bolder">ANMESC Laptop</h4></a>
+                                    <!-- Product reviews-->
+                                    
+                                </div>
+                                <p class="card-text" style="font-size:15px">ANMESC Laptop, 15.6" 1080P Full HD Display High Performance Quad-Core Intel Celeron N5095 Processors 12GB DDR4 512GB SSD Windows 11 Laptop Computers, 2.4G/5G WiFi, Bluetooth 4.2, Long Battery Life</p>
+
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <a class="btn btn-secondary" href="https://amzn.to/46Q1uTZ">$399</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'market/imgs/laptop44.jpg' %}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <a href="https://amzn.to/46Q1uTZ"><h4 class="fw-bolder">Acer</h4></a>
+                                    
+                                </div>
+                                <p class="card-text" style="font-size:15px">Acer 2022 Chromebook 315 15.6" Full HD 1080p IPS Touchscreen Laptop PC, Intel Celeron N4020 Dual-Core Processor, 4GB DDR4 RAM, 64GB eMMC, Webcam, WiFi, 12 Hrs Battery Life, Chrome OS, Silver</p>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <a class="btn btn-secondary" href="https://amzn.to/44tRzSO">$399</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'market/imgs/laptop55.jpg' %}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <a href=""><h4 class="fw-bolder">Acer</h4></a>
+                                
+                                </div>
+                                <p class="card-text" style="font-size:15px">Acer Aspire 3 A315-24P-R7VH Slim Laptop | 15.6" Full HD IPS Display | AMD Ryzen 3 7320U Quad-Core Processor | AMD Radeon Graphics | 8GB LPDDR5 | 128GB NVMe SSD | Wi-Fi 6 | Windows 11 Home in S Mode</p>
+
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <a class="btn btn-secondary" href="https://amzn.to/3XUT7mn">$399</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'market/imgs/laptop66.jpg' %}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <a href="https://amzn.to/3Q0Dh7M"><h4 class="fw-bolder">Lenovo</h4></a>
+                                    
+                                </div>
+                                <p class="card-text" style="font-size:15px">Lenovo 14" FHD Ideapad 3 Newest Laptop, 20GB RAM, 512GB PCIe SSD,Intel Dual Core Processor(Up to 4.1GHz), WiFi, Webcam, Bluetooth, HDMI, Windows 11 S+ Accessories</p>
+
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <a class="btn btn-secondary" href="https://amzn.to/3Q0Dh7M">$399</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{% static 'market/imgs/laptop77.jpg' %}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                   <a href="https://amzn.to/3Q0Dh7M"><h4 class="fw-bolder">Lenovo</h4></a>
+                                     
+                                </div>
+                                <p class="card-text" style="font-size:15px">Lenovo 14" FHD Ideapad 3 Newest Laptop, 20GB RAM, 512GB PCIe SSD,Intel Dual Core Processor(Up to 4.1GHz), WiFi, Webcam, Bluetooth, HDMI, Windows 11 S+ Accessories</p>
+
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <a class="btn btn-secondary" href="https://amzn.to/3Q0Dh7M">$399</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </br></br>
+        <center>
+        <div class="col-lg-6">
+                <script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_search_bar = "true";
+amzn_assoc_tracking_id = "7038610584-20";
+amzn_assoc_search_bar_position = "bottom";
+amzn_assoc_ad_mode = "search";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_title = "Shop Related Products";
+amzn_assoc_default_search_phrase = "laptop";
+amzn_assoc_default_category = "All";
+amzn_assoc_linkid = "f278f19fef9b72fc4056b1537fe6a68f";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+</div>
+</center>
+        </section></br></br>
+        {% endblock %}
+
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'market/js/scripts.js' %}"></script>
+    </body>
+</html>
